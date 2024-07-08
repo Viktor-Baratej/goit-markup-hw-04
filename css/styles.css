@@ -98,17 +98,16 @@ section {
   color: #404bbf;
 }
 
-.nav-menu-link:hover::after,
-.nav-menu-link:focus::after,
-.nav-menu-link.is-active::after {
-  transform: scaleX(1);
-}
-
 .header-contacts {
   font-style: normal;
   margin-left: auto;
 }
 
+.nav-menu-link:hover::after,
+.nav-menu-link:focus::after,
+.nav-menu-link.is-active::after {
+  transform: scaleX(1);
+}
 .nav-menu-link. {
   color: #404bbf;
 }
@@ -243,6 +242,19 @@ section {
 .features-item {
   max-width: calc((100% - 72px) / 4);
   width: 100%;
+}
+
+.features-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 100px;
 }
 
 .features-title {
