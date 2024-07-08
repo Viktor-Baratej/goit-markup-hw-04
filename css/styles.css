@@ -321,6 +321,34 @@ section {
   text-align: center;
 }
 
+.team-icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.team-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 70px;
+}
+
+.team-icon {
+  fill: white;
+}
+
+.team-icons-link:hover,
+.team-icons-link:focus {
+  background-color: #404bbf;
+}
+
 .portfolio-list {
   display: flex;
   justify-content: space-between;
@@ -370,4 +398,44 @@ section {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer-info {
+  margin-right: 120px;
+}
+
+.footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  fill: white;
+  background-color: #4d5ae5;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #404bbf;
 }
