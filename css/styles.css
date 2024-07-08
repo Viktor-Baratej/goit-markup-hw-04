@@ -63,12 +63,6 @@ section {
   align-items: center;
 }
 
-.nav-menu-active {
-  border-radius: 2px;
-  width: 48px;
-  height: 4px;
-}
-
 .nav-menu-item:not(:last-child),
 .header-contacts-item:not(:last-child) {
   margin-right: 40px;
@@ -81,11 +75,33 @@ section {
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #2e2f42;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu-link::after {
+  position: absolute;
+  content: '';
+  background-color: #404bbf;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  bottom: -1px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-menu-link:hover,
-.nav-menu-link:focus {
+.nav-menu-link:focus,
+.nav-menu-link.is-active {
   color: #404bbf;
+}
+
+.nav-menu-link:hover::after,
+.nav-menu-link:focus::after,
+.nav-menu-link.is-active::after {
+  transform: scaleX(1);
 }
 
 .header-contacts {
@@ -93,7 +109,7 @@ section {
   margin-left: auto;
 }
 
-.nav-menu-link.is-active {
+.nav-menu-link. {
   color: #404bbf;
 }
 
@@ -136,7 +152,7 @@ section {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('/images/hero-title.jpg');
+    url('../images/hero-title.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
