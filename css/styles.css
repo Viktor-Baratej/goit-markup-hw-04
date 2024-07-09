@@ -441,6 +441,7 @@ section {
 
 .footer-content {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-text {
