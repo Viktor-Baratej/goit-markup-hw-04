@@ -404,6 +404,10 @@ section {
   margin-right: 120px;
 }
 
+.footer-content {
+  display: flex;
+}
+
 .footer-social-text {
   font-weight: 500;
   font-size: 16px;
@@ -423,8 +427,8 @@ section {
 
 .footer-social-link {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   gap: 16px;
   width: 40px;
